@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    border: 0;
+    background-image: url(/img/Black\ Wallpaper\ 4K\ -\ WallpaperSafari.jpeg);
+    background-position: center;
+    background-size: cover; 
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*As unidades vh e vw significam viewport, sendo a primeira para altura e a 
+    segunda para largura. Isso significa que elas utilizam o tamanho total da viewport
+     (tamanho do nosso dispositivo), ou seja, uma altura de 100vh corresponde a 100% da página total*/
+    width: 100%;
+    /* background-color: green; */
+}
+
+#container-form{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(109, 106, 106);
+    border-radius: 50px;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid #fff ;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: #fff;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    
+    top: -8px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background: #fff;
+    border: none;
+    color: rgb(32, 31, 31);
+ 
+}
+
+button:hover{
+    background: rgb(32, 31, 31);
+    color: white;
+}
+
+#register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+#register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#register p a:hover{
+    text-decoration: underline;
+}
